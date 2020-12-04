@@ -1,0 +1,355 @@
+/*  KAFELKI
+*/
+
+
+.tiles {
+    box-sizing: border-box;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    z-index: 0;
+}
+
+.tile {
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
+
+    background: whitesmoke;
+    padding: 0;
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tile:hover {
+    box-shadow: 0 0 15px 0 #343a40;
+}
+
+.tile-img {
+    border-radius: 3px 3px 0 0;
+    height: 150px;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.tile-text {
+    width: 100%;
+
+    text-align: justify;
+    padding: 15px;
+}
+
+
+/*  JUMBO
+*/
+
+.jumbo {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 750px;
+
+    padding: 0;
+    margin: 50px 0;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    z-index: 0;
+}
+
+.jumbo-text {
+    border: 1px solid lightgray;
+    background: whitesmoke;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: justify;
+    padding: 40px;
+}
+
+/*  GRIDED
+*/
+
+.trucks {
+    box-sizing: border-box;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-gap: 50px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        ". a a a"
+        "b b b ."
+        ". c c c";
+
+    z-index: 0;
+}
+
+.page-text {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+
+    font-size: 48px;
+    font-weight: 300;
+    text-shadow: 5px 7px 15px black;
+    letter-spacing: 5px;
+}
+
+.truck {
+    box-sizing: border-box;
+    width: 100%;
+
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    transition: all 0.4s ease-in-out;
+    background: whitesmoke;
+    border-radius: 3px;
+}
+
+.truck-left:hover .truck-photo {
+    transform: translateX(-30px) translateY(10px);
+    box-shadow: 10px -5px 55px 0 grey;
+}
+
+.truck-right:hover .truck-photo {
+    transform: translateX(30px) translateY(10px);
+    box-shadow: -10px -5px 55px 0 grey;
+}
+
+.truck-1 {grid-area: a; flex-direction: row;}
+.truck-2 {grid-area: b; flex-direction: row-reverse;}
+.truck-3 {grid-area: c; flex-direction: row;}
+
+.truck-photo {
+    padding: 20px;
+    min-height: 240px;
+
+    transition: all 0.6s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.truck-text {
+    padding: 20px;
+    flex-basis: 50%;
+    min-height: 240px;
+}
+
+/*  BANER
+*/
+
+.baner {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 450px;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    z-index: 0;
+}
+
+.baner-photo {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 350px;
+
+    padding: 0;
+    margin: 0;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    z-index: 0;
+}
+
+.baner-text {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100px;
+
+    padding: 0 50px;
+    margin: 0;
+
+    background: whitesmoke;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: nowrap;
+
+    z-index: 0;
+}
+
+.page-photo {
+    box-sizing: border-box;
+    width: 80%;
+    height: 250px;
+
+    padding: 0;
+    margin: 30px auto;
+    border-radius: 3px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    z-index: 0;
+}
+
+.contact-info {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+
+    padding: 0;
+    margin: 30px 0;
+
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    z-index: 0;
+}
+
+.contact-info > span {padding: 15px;}
+
+.form-rows {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+
+    margin: 30px 0;
+    padding: 0;
+    z-index: 0;
+}
+
+.about-article {
+    margin: 50px 0;
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+/*  ADMIN
+*/
+
+.admin-logout {
+    background: whitesmoke;
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+
+    z-index: 2;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.admin-logout > a {color: whitesmoke;}
+
+.admin-elem  {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@media (max-width: 465px) {
+
+.tile {flex-basis: 100%;}
+.jumbo-text {width: 90%;}
+.contact-info {font-size: 26px;}
+.baner-text {font-size: 30px;}
+
+.truck {flex-direction: column;}
+.truck-photo {flex-basis: 100%;}
+.truck-text {flex-basis: 100%;}
+
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@media (min-width: 466px) and (max-width: 992px) {
+
+.tile {flex-basis: 45%;}
+.jumbo-text {width: 70%;}
+.contact-info {font-size: 28px;}
+.baner-text {font-size: 36px;}
+
+.truck {flex-direction: column;}
+.truck-photo {flex-basis: 100%;}
+.truck-text {flex-basis: 100%;}
+    
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@media (min-width: 992px) {
+
+.tile {flex-basis: 22%;}
+.jumbo-text {width: 40%;}
+.contact-info {font-size: 32px;}
+.baner-text {font-size: 42px;}
+
+.truck-photo {flex-basis: 50%;}
+.truck-text {flex-basis: 50%;}
+    
+}

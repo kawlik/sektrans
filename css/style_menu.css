@@ -1,0 +1,251 @@
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+/*  MENU STRONY
+*/
+
+.menu {
+    width: 1200px;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.menu-elem {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+/*  MENU STRONY     =>      LOGO
+*/
+
+.menu-logo {
+    font-size: 28px;
+}
+
+/*  MENU STRONY     =>      LINK
+*/
+
+.menu-link {
+    font-size: 24px;
+}
+
+.menu-link-list {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-100vw);
+
+    visibility: collapse;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-link-list-elem {
+    box-sizing: border-box;
+    max-height: 100px;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.menu-link-list-active {
+    visibility: visible;
+    transform: translateX(0);
+    transition: all 0.4s ease-in-out;
+}
+
+/*  MENU STRONY     =>      INFO
+*/
+
+.menu-info {
+    font-size: 26px;
+}
+
+.menu-info-cnt {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    display: none;
+
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-info-cnt a {
+    height: auto;
+    width: auto;
+}
+
+.menu-info-btn {
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+
+    background: transparent;
+    position: relative;
+    border: 0;
+
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.menu-info-btn::before,
+.menu-info-btn::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background: #343a40;
+    transition: all 0.4s ease-in-out;
+
+    position: absolute;
+    left: 0;
+}
+
+.menu-info-btn::before {
+    box-shadow: 0 12px 0 0 #343a40;
+    top: 0;
+}
+
+.menu-info-btn::after {
+    box-shadow: 0 -12px 0 0 #343a40;
+    bottom: 0;
+}
+
+.menu-info-btn-cross::before {
+    transform: translateY(18px) rotate(-45deg);
+    box-shadow: none;
+}
+
+.menu-info-btn-cross::after {
+    transform: translateY(-18px) rotate(45deg);
+    box-shadow: none;
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@media (max-width: 425px) {
+
+.menu-logo {flex-basis: 50%;}
+.menu-info {flex-basis: 15%;}
+.menu-link {flex-basis: 35%;}
+
+.menu-link-list-elem {flex-basis: 100%; margin: 10px 0;}
+.menu-link-list {
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    background: whitesmoke;
+    height: calc(40vh + 100px);
+    width: 100vw;
+
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #343a40;
+}
+
+.menu-info-btn  {display: flex;}
+.menu-info-cnt  {display: none;}
+
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+.menu-logo {flex-basis: 45%;}
+.menu-info {flex-basis: 25%;}
+.menu-link {flex-basis: 30%;}
+
+.menu-link-list-elem {flex-basis: 100%; margin: 12px 0;}
+.menu-link-list {
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    background: whitesmoke;
+    height: calc(40vh + 100px);
+    width: 100vw;
+
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #343a40;
+}
+
+.menu-info-btn  {display: flex;}
+.menu-info-cnt  {display: none;}
+    
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@media (min-width: 769px) {
+
+.menu-logo {flex-basis: 20%;}
+.menu-info {flex-basis: 20%;}
+.menu-link {flex-basis: 60%;}
+.menu-link-list {
+    visibility: visible;
+    flex-wrap: nowrap;
+    transform: translateX(0);
+}
+
+.menu-link-list-elem {flex-basis: auto; opacity: 1;}
+
+.menu-info-btn  {display: none;}
+.menu-info-cnt  {display: flex;}
+
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@keyframes menuLinkListElemAnim {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,119 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #343a40;
+
+    background-color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+a:link      {color: #343a40; text-decoration: none;}
+a:visited   {color: #343a40; text-decoration: none;}
+a:active    {color: #343a40; text-decoration: none;}
+a:hover     {color: #343a40; text-decoration: none;}
+
+ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+/*  ELEMENTY GŁÓWNE
+*/
+
+
+/*  MENU GŁÓWNE
+*/
+
+.navbar {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 60px;
+
+    background: whitesmoke;
+    padding: 0;
+    margin: 0;
+
+    position: sticky;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    border-bottom: 1px solid #343a40;
+    z-index: 2;
+}
+
+/*  SLAJDY
+*/
+
+.slider {
+    width: 100vw;
+    height: 650px;
+    
+    background-color: black;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+
+    color: whitesmoke;
+    font-weight: 300;
+    text-shadow:
+        3px 3px 15px #343a40,
+        3px -3px 15px #343a40,
+        -3px 3px 15px #343a40,
+        -3px -3px 15px #343a40;
+}
+
+.slide-1 {background-image: url('../img/road_4.jpg');}
+.slide-2 {background-image: url('../img/road_2.jpg');}
+.slide-3 {background-image: url('../img/road_7.jpg');}
+
+/*  CONTAINER
+*/
+
+.container {
+    text-align: justify;
+    padding: 20px;
+}
+
+/*  KAFELKI I ELEMENTY NA STRONIE
+*/
+
+.tile-1 > .tile-img {background-image: url('../img/road_5.jpg');}
+.tile-2 > .tile-img {background-image: url('../img/road_6.jpg');}
+.tile-3 > .tile-img {background-image: url('../img/road_7.jpg');}
+.tile-4 > .tile-img {background-image: url('../img/road_4.jpg');}
+
+.jumbo {background-image: url('../img/road_3.jpg');}
+
+.truck-1 > .truck-photo {background-image: url('../img/truck_1.png');}
+.truck-2 > .truck-photo {background-image: url('../img/truck_2.png');}
+.truck-3 > .truck-photo {background-image: url('../img/truck_3.png');}
+
+.baner-page > .baner-photo {background-image: url('../img/road_2.jpg');}
+.baner-list > .baner-photo {background-image: url('../img/road_5.jpg');}
+.baner-about > .baner-photo {background-image: url('../img/road_6.jpg');}
+.baner-contact > .baner-photo {background-image: url('../img/contact.jpg');}
+.baner-admin > .baner-photo {background-image: url('../img/admin.jpg');}
+
+.page-photo-1 {background-image: url('../img/road_1.jpg');}
+.page-photo-2 {background-image: url('../img/road_2.jpg');}
+.page-photo-3 {background-image: url('../img/road_3.jpg');}

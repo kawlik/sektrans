@@ -1,0 +1,42 @@
+.page-list {
+    margin: 50px 0;
+}
+
+.list-elem {
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0;
+
+    opacity: 0;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.list-elem > a {color: whitesmoke;}
+.list-elem-add {opacity: 1; margin: 30px 0;}
+
+.page-list-label {font-size: 32px;}
+.page-list-time-c {display: block;}
+.page-list-time-e {display: block;}
+
+
+.page-article {
+    margin: 50px 0;
+}
+
+.page-article-title {font-size: 32px;}
+.page-article-time-c {display: block;}
+.page-article-time-e {display: block;}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@keyframes pageListElemsAnim {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
