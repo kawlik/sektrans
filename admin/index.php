@@ -6,7 +6,7 @@ require TEMP.'/header.php';
 
 
 //  sprawdzanie, czy jest ktoś zalogowany
-if(!isset($_SESSION['is_logged'])) {
+if(!isset($_SESSION['is_logged']) || !isset($_COOKIE['login_timeout'])) {
 
     //  nikt nie jest zalogowany
     require ADMN.'/user/login.php';
@@ -37,5 +37,6 @@ if(!isset($_SESSION['is_logged'])) {
 }
 
 require TEMP.'/footer.php';
+
 
 ?>
