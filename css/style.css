@@ -61,6 +61,20 @@ li {
     z-index: 2;
 }
 
+
+.fa-facebook-square {color: #3b5998; }
+.fa-envelope {color: #34A853;}
+.fa-youtube {color: #c4302b;}
+
+.fa-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
 /*  SLAJDY
 */
 
@@ -104,9 +118,8 @@ li {
 
 .jumbo {background-image: url('../img/road_3.jpg');}
 
-.truck-1 > .truck-photo {background-image: url('../img/truck_1.png');}
-.truck-2 > .truck-photo {background-image: url('../img/truck_2.png');}
-.truck-3 > .truck-photo {background-image: url('../img/truck_3.png');}
+.map-skew {background-image: url('../img/slide_2.jpg');}
+.map-img {background-image: url('../img/sektrans_map.png');}
 
 .baner-page > .baner-photo {background-image: url('../img/road_2.jpg');}
 .baner-list > .baner-photo {background-image: url('../img/road_5.jpg');}

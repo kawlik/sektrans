@@ -1,10 +1,7 @@
 <div class="navbar">
     <nav class="menu">
         <div class="menu-elem menu-logo">
-            <a href="<?php echo URL; ?> ">
-                <i class='fas fa-shipping-fast'></i>
-                <span>Sek-Trans</span>
-            </a>
+            <a class="menu-logo-text" href="<?php echo URL; ?>"><span>SEK-TRANS</span></a>
         </div>
         <div class="menu-elem menu-link">
             <ul class="menu-link-list">
@@ -17,10 +14,10 @@
         <div class="menu-elem menu-info">
             <button class="menu-info-btn"></button>
             <div class="menu-info-cnt">
-                <a href=""><i class="fab fa-facebook-square"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-youtube"></i></a>
-                <a href=""><i class="far fa-envelope"></i></a>
+                <a target="blank" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a target="blank" href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a target="blank" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                <a target="blank" href="mailto: mail@mail.com"><i class="far fa-envelope"></i></a>
             </div>
         </div>
     </nav>

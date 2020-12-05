@@ -1,7 +1,6 @@
 /*  KAFELKI
 */
 
-
 .tiles {
     box-sizing: border-box;
     width: 100%;
@@ -10,7 +9,7 @@
     margin: 0;
 
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
     flex-wrap: wrap;
 
@@ -18,9 +17,12 @@
 }
 
 .tile {
+    opacity: 0;
+    position: relative;
     border-radius: 3px;
     box-sizing: border-box;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
 
     background: whitesmoke;
     padding: 0;
@@ -32,13 +34,42 @@
     flex-wrap: wrap;
 }
 
-.tile:hover {
-    box-shadow: 0 0 15px 0 #343a40;
+.tile-text h3 {transition: all ease-in-out 0.3s;}
+.tile:hover {box-shadow: 0 0 15px 0 lightgrey;}
+.tile:hover i {color: orangered;}
+.tile:hover h3 {color: orangered;}
+
+
+.tile-skew {
+    box-sizing: border-box;
+    width: 150px;
+    height: 60px;
+
+    background: whitesmoke;
+    padding: 0;
+    margin: 0;
+
+    transform: skew(30deg, 0);
+    position: absolute;
+    top: 150px;
+    left: -20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.tile-skew i {
+    transition: all 0.3s ease-in-out;
+    transform: skew(-30deg, 0);
+    font-size: 32px;
+    color: #343a40;
 }
 
 .tile-img {
     border-radius: 3px 3px 0 0;
-    height: 150px;
+    height: 210px;
     width: 100%;
 
     background-repeat: no-repeat;
@@ -48,10 +79,12 @@
 
 .tile-text {
     width: 100%;
+    height: 100%;
 
     text-align: justify;
     padding: 15px;
 }
+
 
 
 /*  JUMBO
@@ -87,6 +120,138 @@
     padding: 40px;
 }
 
+.jumbo-text h2 {letter-spacing: 4px; transition: all ease-in-out 0.3s;}
+.jumbo-text:hover h2 {color: orangered;}
+
+/*  SERVICE LIST & MAP
+*/
+
+.service-list {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+
+    padding: 0;
+    margin: 50px 0;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+
+.service-elem {
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+
+    padding: 0;
+    margin: 10px 0;
+    border: 1px solid gray;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-elem:hover {border-color: orangered;}
+.service-elem:hover > .service-elem-skew {background: orangered;}
+.service-elem:hover > .service-elem-skew > i {color: white;}
+.service-elem h3 {transition: all ease-in-out 0.3s;}
+.service-elem:hover h3 {color: orangered;}
+
+.service-elem-skew {
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    height: 100%;
+
+    background: whitesmoke;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.service-elem-skew i {
+    transition: all 0.3s ease-in-out;
+    font-size: 36px;
+    color: orangered;
+}
+
+.service-elem-text {
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.map-entry-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 50px 10px;
+}
+
+.map {
+    height: 450px;
+    background: #343434;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.map-skew {
+    z-index: 0;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.map-info {
+    z-index: 1;
+    height: 100%;
+
+    background: #343434;
+
+    transform: skew(20deg) translateX(-100px);
+    padding: 30px;
+}
+
+.map-img {
+    transform: skew(-20deg) translateX(100px);
+    border-radius: 3px;
+
+    max-width: 1200px;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 /*  GRIDED
 */
 
@@ -109,15 +274,18 @@
     z-index: 0;
 }
 
-.page-text {
-    width: 100%;
-    height: auto;
-    padding: 30px;
-
-    font-size: 48px;
-    font-weight: 300;
-    text-shadow: 5px 7px 15px black;
-    letter-spacing: 5px;
+.trucks-entry-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 50px 10px;text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 50px 10px;
 }
 
 .truck {
@@ -130,21 +298,21 @@
 
     align-content: center;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background: whitesmoke;
     border-radius: 3px;
 }
 
+.truck:hover h3 {color: orangered;}
+
 .truck-left:hover .truck-photo {
-    transform: translateX(-30px) translateY(10px);
-    box-shadow: 10px -5px 55px 0 grey;
+    transform: translateX(-35px) translateY(15px) scale(1.20);
 }
 
 .truck-right:hover .truck-photo {
-    transform: translateX(30px) translateY(10px);
-    box-shadow: -10px -5px 55px 0 grey;
+    transform: translateX(35px) translateY(15px) scale(1.20);
 }
 
 .truck-1 {grid-area: a; flex-direction: row;}
@@ -152,14 +320,21 @@
 .truck-3 {grid-area: c; flex-direction: row;}
 
 .truck-photo {
-    padding: 20px;
-    min-height: 240px;
+    transition: all ease-in-out 0.3s;
 
-    transition: all 0.6s ease-in-out;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+.truck-photo > img {width: 100%;}
+.truck h3 {transition: all ease-in-out 0.3s;}
 
 .truck-text {
     padding: 20px;
@@ -226,6 +401,7 @@
 
     z-index: 0;
 }
+
 
 .page-photo {
     box-sizing: border-box;
@@ -312,12 +488,21 @@
 
 /*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
 
-@media (max-width: 465px) {
+@media (max-width: 767px) {
 
 .tile {flex-basis: 100%;}
 .jumbo-text {width: 90%;}
 .contact-info {font-size: 26px;}
 .baner-text {font-size: 30px;}
+
+.service-elem {flex-basis: 100%;}
+.service-elem-skew {flex-basis: 100%; height: 80px;}
+.service-elem-text {flex-basis: 100%;}
+
+.map-skew {flex-basis: 0%;}
+.map-info {flex-basis: 100%; transform: skew(0) translateX(0);}
+.map-img {transform: skew(0) translateX(0);}
+
 
 .truck {flex-direction: column;}
 .truck-photo {flex-basis: 100%;}
@@ -327,12 +512,20 @@
 
 /*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
 
-@media (min-width: 466px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
 
-.tile {flex-basis: 45%;}
+.tile {flex-basis: 100%;}
 .jumbo-text {width: 70%;}
 .contact-info {font-size: 28px;}
 .baner-text {font-size: 36px;}
+
+.service-elem {flex-basis: 100%;}
+.service-elem-skew {flex-basis: 20%; transform: skewX(20deg) translateX(-20px);}
+.service-elem-skew i {transform: skewX(-20deg);}
+.service-elem-text {flex-basis: 80%;}
+
+.map-skew {flex-basis: 45%;}
+.map-info {flex-basis: 55%;}
 
 .truck {flex-direction: column;}
 .truck-photo {flex-basis: 100%;}
@@ -344,12 +537,32 @@
 
 @media (min-width: 992px) {
 
-.tile {flex-basis: 22%;}
-.jumbo-text {width: 40%;}
+.tile {flex-basis: 31%;}
+.jumbo-text {width: 50%;}
 .contact-info {font-size: 32px;}
 .baner-text {font-size: 42px;}
+
+.service-elem {flex-basis: 48%;}
+.service-elem-skew {flex-basis: 30%; transform: skewX(20deg) translateX(-25px);}
+.service-elem-skew i {transform: skewX(-20deg);}
+.service-elem-text {flex-basis: 70%;}
+
+.map-skew {flex-basis: 35%;}
+.map-info {flex-basis: 65%;}
 
 .truck-photo {flex-basis: 50%;}
 .truck-text {flex-basis: 50%;}
     
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@keyframes tileAnim {
+    from {
+        opacity: 0;
+        transform: rotateY(270deg) translateY(-100vh);
+    } to {
+        opacity: 1;
+        transform: rotateZ(0);
+    }
 }

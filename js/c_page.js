@@ -76,7 +76,7 @@ class List {
             if(elem.style.animation) {
                 elem.style.animation = "";
             } else {
-                elem.style.animation = `pageListElemsAnim 0.4s ease-in-out forwards ${index/5 + 0.1}s`;
+                elem.style.animation = `pageListElemsAnim 0.3s ease-in-out forwards ${index/5 + 0.1}s`;
             }
         });
     }
