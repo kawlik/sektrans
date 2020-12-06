@@ -6,7 +6,7 @@
     */
 
     $pages = false; //  deklaracja zmiennej przechowującej informacje o dostępności stron
-    $pages = $db->query('SELECT id, label, body, created, edited FROM pages ORDER BY id DESC LIMIT 20')->fetchAll(PDO::FETCH_ASSOC);
+    $pages = $db->query('SELECT id, label, body, created, edited FROM pages ORDER BY id DESC')->fetchAll(PDO::FETCH_ASSOC);
 
 
     /*

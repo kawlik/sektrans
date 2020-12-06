@@ -4,7 +4,7 @@ class Slider {
     constructor(selector, options) {
 
         const defaultOptions = {
-            time : 5500,
+            time : 7500,
             
         }   //  Domyślny zestaw opcji dla slajdera
 
@@ -48,6 +48,9 @@ class Slider {
 
             //  Generowanie nawigacji
             this.generatePrevNextDots();
+
+            //  Nakładanie animacji wstępnej
+            this.slides[this.current].style.animation = "slideAnim 1s ease-in-out forwards 0s";
         }
     }
 
@@ -102,9 +105,11 @@ class Slider {
 
     //  Zmiana slajdu
     changeSlide(index) {
+
         this.slides.forEach(slide => {
             slide.classList.remove("slide-active");
         });
+
         this.slides[index].classList.add("slide-active");
 
         this.dots.forEach(dot => {

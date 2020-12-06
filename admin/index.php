@@ -1,17 +1,17 @@
 <?php
 
 //  imprt wspólnego pliku
+
+use function PHPSTORM_META\type;
+
 require 'admin.php';
 require TEMP.'/header.php';
 
 
 //  sprawdzanie, czy jest ktoś zalogowany
-if(!isset($_SESSION['is_logged']) || !isset($_COOKIE['login_timeout'])) {
-
-    //  nikt nie jest zalogowany
-    require ADMN.'/user/login.php';
-
-} else {
+//  jeśli istnieje zmienna sesyjna 'is_logged' - ktos jest zalogowany
+//  jesli zmienna cookie 'login_timeout' istnieje - ktos jest zalogowany
+if($_SESSION['is_logged'] && (int)$_COOKIE['login_timeout'] > time()) {
 
     //  ktos jest juz zalogowany
     require ADMN.'/user/logout.php';
@@ -34,6 +34,19 @@ if(!isset($_SESSION['is_logged']) || !isset($_COOKIE['login_timeout'])) {
             deletePage($_POST, $db);
         break;
     }
+
+} else {
+
+    //  sesja nie powinna widzieć nikogo jako zalogowanego
+    $_SESSION['is_logged'] = false;
+
+    //  nikt nie jest zalogowany
+    require ADMN.'/user/login.php';
+
+    //  tworzenie ciasteczka automatycznego wylogowania po zamknięciu przeglądarki
+    //  login timeout zezwala na 12 minut niewylogowywania się
+    setcookie('login_timeout', time() + (12 * 60), time() + (12 * 60));
+
 }
 
 require TEMP.'/footer.php';

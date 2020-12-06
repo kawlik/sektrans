@@ -11,7 +11,12 @@
 
     $article = $db->prepare('SELECT label, title, body, created, edited FROM pages WHERE id = :id');
     $article->execute(['id' => $_GET['page']]);
-    $article = $article->fetch(PDO::FETCH_ASSOC);
+
+    if(!$article = $article->fetch(PDO::FETCH_ASSOC)) {
+        require ERR.'/error.php';
+        require TEMP.'/footer.php';
+        exit;
+    }
 
 
     /*

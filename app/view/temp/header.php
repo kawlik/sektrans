@@ -38,3 +38,7 @@
 <body>
 
 
+
+<div class="cookie">Ta strona korzysta z ciasteczek (cookies). <button type="button" class="btn btn-info">W porządku!</button> <a target="blank" href="">Więcej informacji.</a></div>
+
+

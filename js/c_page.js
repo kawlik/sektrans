@@ -72,6 +72,7 @@ class List {
 
     //  Formatowanie gotowej listy
     formatList() {
+
         this.elems.forEach((elem, index) => {
             if(elem.style.animation) {
                 elem.style.animation = "";

@@ -58,7 +58,9 @@ try {
         Docelowo komunikat o błędzie będzie zapisywany do rejestru błędów.
     */
 
+    require TEMP.'/header.php';
     require ERR.'/error.php';
+    require TEMP.'/footer.php';
     exit();
 
 }

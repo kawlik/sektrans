@@ -10,7 +10,6 @@ function e(string $text) {
 }
 
 
-
 /*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
 /*  FUNKCJE ADMINISTRATORSKIE
 */

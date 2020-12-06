@@ -5,7 +5,7 @@
     </div>
     <div class="slide slide-2">
         <h2 class="slide-elem slide-title">Punktualność i rzetelność</h2>
-        <div class="slide-elem slide-text">Terminowe dostawy są dla nas piorytetem, więc możesz mieć pewność, że będziemy o czasie!</div>
+        <div class="slide-elem slide-text">Terminowe dostawy są dla nas priorytetem, więc możesz mieć pewność, że będziemy o czasie!</div>
     </div>
     <div class="slide slide-3">
         <h2 class="slide-elem slide-title">Szeroki zakres usług</h2>

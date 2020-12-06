@@ -2,7 +2,7 @@
 
 
 
-<!--    standar site baner  -->
+<!--    standard site baner -->
 <div class="baner baner-contact">
     <div class="baner-photo"></div>
     <div class="baner-text">Kontakt</div>
@@ -23,8 +23,24 @@
         <br>Robert Sekuła</span>
         <span><i class='far fa-envelope-open'></i> mail@mail.pl</span>
     </div>
+
+
+    <!--    important hr        -->
     <hr>
 
+
+    <!--    social media links  -->
+    <div class="social-info">
+        <hr>
+        <div class="social-link"><a target="blank" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a></div>
+        <div class="social-link"><a target="blank" href="https://instagram.com"><i class="fab fa-instagram"></i></a></div>
+        <div class="social-link"><a target="blank" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></div>
+        <hr>
+    </div>
+
+
+    <!--    important hr        -->
+    <hr>
 
 
     <!--    contact form        -->

@@ -441,6 +441,19 @@
 
 .contact-info > span {padding: 15px;}
 
+.social-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.social-link {
+    font-size: 42px;
+    text-align: center;
+    flex-basis: 30%;
+}
+
 .form-rows {
     box-sizing: border-box;
     width: 100%;
@@ -485,6 +498,25 @@
     border-radius: 3px;
 }
 
+/*  ERROR
+*/
+
+.error-cnt {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    background: url('../img/error.jpg');
+}
+
 
 /*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
 
@@ -516,6 +548,7 @@
 
 .tile {flex-basis: 100%;}
 .jumbo-text {width: 70%;}
+.social-info {display: none;}
 .contact-info {font-size: 28px;}
 .baner-text {font-size: 36px;}
 
@@ -539,6 +572,7 @@
 
 .tile {flex-basis: 31%;}
 .jumbo-text {width: 50%;}
+.social-info {display: none;}
 .contact-info {font-size: 32px;}
 .baner-text {font-size: 42px;}
 
@@ -560,7 +594,7 @@
 @keyframes tileAnim {
     from {
         opacity: 0;
-        transform: rotateY(270deg) translateY(-100vh);
+        transform: rotateY(270deg) translateY(-300px);
     } to {
         opacity: 1;
         transform: rotateZ(0);
