@@ -229,7 +229,7 @@
 .map-skew {
     z-index: 0;
     height: 100%;
-    background: #343434;
+    background: transparent;
 }
 
 .map-info {
@@ -259,7 +259,7 @@
     border-radius: 3px;
 
     width: 100%;
-    max-width: 1200px;
+    max-width: 2160px;
     height: 100%;
 
     background-repeat: no-repeat;
