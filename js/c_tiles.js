@@ -32,7 +32,7 @@ class Tiles {
             if(elem.style.animation) {
                 elem.style.animation = "";
             } else {
-                elem.style.animation = `tileAnim 1.2s ease-in-out forwards ${index/5 + 0.1}s`;
+                elem.style.animation = `tileAnim 0.8s ease-in-out forwards ${index/5 + 0.1}s`;
             }
         });
     }

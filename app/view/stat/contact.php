@@ -44,44 +44,44 @@
 
 
     <!--    contact form        -->
-    <form class="form-rows">
+    <form class="form-rows contact-form" method="POST" action="<?php echo URL; ?>/admin/f_form.php">
 
 
         <!--    name surname    -->
         <div class="form-grup my-4">
         <label class="form-label" for="form-name">Imię i nazwisko</label>
-        <input class="form-control" id="form-name" type="text" placeholder="np. Jan Kowalski">
+        <input class="form-control form-name" id="form-name" name="form-name" type="text" placeholder="np. Jan Kowalski" required>
         </div>
 
 
         <!--    mail & phone    -->
         <div class="form-grup my-4">
         <label class="form-label" for="form-email">E-mail</label>
-        <input class="form-control" id="form-email" type="email" placeholder="np. j.kowal@mail.pl">
+        <input class="form-control form-email" id="form-email" name="form-email" type="email" placeholder="np. j.kowal@mail.pl" required>
         </div>
 
         <div class="form-grup my-4">
         <label class="form-label" for="form-phone">Numer telefonu</label>
-        <input class="form-control" id="form-phone" type="text" placeholder="np. 789 123 456">
+        <input class="form-control form-phone" id="form-phone" name="form-phone" type="text" placeholder="np. 789 123 456" required>
         </div>
 
 
         <!--    message         -->
         <div class="form-grup my-4">
-        <label class="form-label" for="form-mess">Treść zapytania</label>
-        <textarea class="form-control" id="form-mess" rows="12"></textarea>
+        <label class="form-label" for="form-body">Treść zapytania</label>
+        <textarea class="form-control form-body" id="form-body" name="form-body" rows="12" required></textarea>
         </div>
 
 
         <!--    agreement       -->
         <div class="form-check my-4">
-        <input class="form-check-input" type="checkbox" id="form-check">
+        <input class="form-check-input" type="checkbox" id="form-check"  required>
         <label class="form-check-label" for="form-check">Znam i akceptuję politykę prywatności.</label>
         </div>
 
 
         <!--    form submit     -->
-        <button type="submit" class="btn btn-primary">Wyślij!</button>
+        <button class="btn btn-success form-submit" type="submit">Dodaj!</button>
 
 
     <!--    end ofcontact form  -->

@@ -1,6 +1,3 @@
-<?php require TEMP.'/header.php'; ?>
-
-
 <?php
 
     /*
@@ -72,7 +69,3 @@
 <?php endif; ?>
 <!--    end of container    -->
 </div>
-
-
-
-<?php require TEMP.'/footer.php'; ?>

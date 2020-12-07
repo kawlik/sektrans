@@ -35,6 +35,10 @@
         case 'delete':  //  usunięcie wybranej strony
             require 'page/delete.php';
         break;
+
+        case 'forms':   //  przeglądanie formularzy
+            require 'page/forms.php';
+        break;
     }
 
 ?>

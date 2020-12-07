@@ -1,6 +1,3 @@
-<?php require TEMP.'/header.php'; ?>
-
-
 <?php
 
     /*
@@ -41,33 +38,32 @@
     <h2>Edytuj wybrany wpis</h2>
     <hr>
 
-    <form method="POST" action="<?php echo URL; ?>/admin/?action=edit">
+    <form class="form-rows" method="POST" action="<?php echo URL; ?>/admin/?action=edit">
 
         <!--    new page label  -->
         <div class="form-grup my-4">
         <label class="form-label" for="form-label">Nazwa wpisu</label>
-        <input class="form-control" id="form-label" name="form-label" type="text" value="<?php echo $article['label']; ?>">
+        <input class="form-control form-label" id="form-label" name="form-label" type="text" value="<?php echo $article['label']; ?>" required>
         </div>
 
         <!--    new page title  -->
         <div class="form-grup my-4">
         <label class="form-label" for="form-title">Nazwa wpisu</label>
-        <input class="form-control" id="form-title" name="form-title" type="text" value="<?php echo $article['title']; ?>">
+        <input class="form-control form-title" id="form-title" name="form-title" type="text" value="<?php echo $article['title']; ?>" required>
         </div>
 
         <!--    new page body   -->
         <div class="form-grup my-4">
         <label class="form-label" for="form-body">Treść zapytania</label>
-        <textarea class="form-control" id="form-body" name="form-body" rows="12">
+        <textarea class="form-control form-body" id="form-body" name="form-body" rows="12" required>
             <?php echo $article['body']; ?>
         </textarea>
         </div>
 
         <input type="hidden" name="form-id" value="<?php echo $article['id']; ?>">
-        <input class="btn btn-success" type="submit" value="Dodaj">
+        <button class="btn btn-success form-submit" type="button">Dodaj!</button>
 
     </form>
 
 
 </div>
-<?php require TEMP.'/footer.php'; ?>

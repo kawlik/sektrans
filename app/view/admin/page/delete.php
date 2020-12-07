@@ -1,6 +1,3 @@
-<?php require TEMP.'/header.php'; ?>
-
-
 <?php
 
     /*
@@ -43,7 +40,7 @@
 
 
 <!--    delete form         -->
-<form method="POST" action="<?php echo URL; ?>/admin/?action=delete">
+<form class="form-rows-delete" method="POST" action="<?php echo URL; ?>/admin/?action=delete">
 
         <!--    delete ensure   -->
         <h1>Czy na pewno chcesz usunąć artykuł?</h1>
@@ -90,7 +87,3 @@
 <?php endif; ?>
 <!--    end of container    -->
 </div>
-
-
-
-<?php require TEMP.'/footer.php'; ?>
