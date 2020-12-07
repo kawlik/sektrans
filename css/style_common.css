@@ -209,7 +209,13 @@
 
 .map {
     height: 450px;
-    background: #343434;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 
     margin: 0;
     padding: 0;
@@ -223,11 +229,7 @@
 .map-skew {
     z-index: 0;
     height: 100%;
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    background: #343434;
 }
 
 .map-info {
@@ -235,21 +237,41 @@
     height: 100%;
 
     background: #343434;
-
-    transform: skew(20deg) translateX(-100px);
     padding: 30px;
+    position: relative;
+}
+
+.map-info::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: -120px;
+    top: 0;
+
+    background: #343434;
+    height: 100%;
+    width: calc(100% + 240px);
+
+    transform: skewX(20deg);
 }
 
 .map-img {
-    transform: skew(-20deg) translateX(100px);
     border-radius: 3px;
 
+    width: 100%;
     max-width: 1200px;
     height: 100%;
 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.map-img > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 /*  GRIDED

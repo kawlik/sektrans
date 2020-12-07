@@ -42,7 +42,9 @@ if($_SESSION['is_logged'] && (int)$_COOKIE['login_timeout'] > time()) {
 
     //  nikt nie jest zalogowany
     require ADMN.'/user/login.php';
-    require ADMN.'/user/register.php';
+
+    //  Element w fazie rozwoju
+    /*  require ADMN.'/user/register.php';  */
 
     //  tworzenie ciasteczka automatycznego wylogowania po zamknięciu przeglądarki
     //  login timeout zezwala na 12 minut niewylogowywania się

@@ -14,6 +14,7 @@ body {
     margin: 0;
 }
 
+
 a:link      {color: #343a40; text-decoration: none;}
 a:visited   {color: #343a40; text-decoration: none;}
 a:active    {color: #343a40; text-decoration: none;}
@@ -127,7 +128,7 @@ li {
 
 .jumbo {background-image: url('../img/road_3.jpg');}
 
-.map-skew {background-image: url('../img/slide_2.jpg');}
+.map {background-image: url('../img/slide_2.jpg');}
 .map-img {background-image: url('../img/sektrans_map.png');}
 
 .baner-page > .baner-photo {background-image: url('../img/road_2.jpg');}

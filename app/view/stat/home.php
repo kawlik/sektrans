@@ -176,13 +176,13 @@
 
 
 
-<!--    map container       -->
 <!--    map entry text   -->
 <div class="map-entry-text">Gdzie jesteśmy?</div>
+
+<!--    map container       -->
 <div class="map">
-<div class="map-skew"></div>
 <div class="map-info">
-    <a target="blank" href="https://www.google.com/maps/place/Wygonowa+8,+47-400+Racibórz/@50.0765817,18.2668225,20.5z/data=!4m5!3m4!1s0x471142da5aca97bf:0x10b6bf37b0164f5c!8m2!3d50.0766232!4d18.2667962"><div class="map-img"></div></a>
+<a target="blank" href="https://www.google.com/maps/place/Wygonowa+8,+47-400+Racibórz/@50.0765817,18.2668225,20.5z/data=!4m5!3m4!1s0x471142da5aca97bf:0x10b6bf37b0164f5c!8m2!3d50.0766232!4d18.2667962"><div class="map-img"></div></a>
 </div>
 </div>
 <!--    end of map cntr     -->

@@ -1,10 +1,25 @@
 <?php
 
-var_dump($_POST);
 
+/*
+    SEKCJA NIEDOSTĘPNA
 
-//  Plik wspólny
+    
+    Automatyczne przekierowanie na stronę główną,
+    do czasu właściwego zabezpieczenia.
+
+    Stan na 07.12.2020
+*/
+
+//  Importowanie pliku wspólnego
 require 'admin.php';
+header('Location: '.URL);
+exit();
+
+
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
 
 
 //  Obsługa formularza
@@ -23,7 +38,6 @@ $user->execute([
     'haslo'     =>  $haslo,
 ]);
 
-var_dump($_POST);
 header('Location: '.URL.'/admin');
 exit();
 

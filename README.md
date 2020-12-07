@@ -18,3 +18,10 @@ Projekt zakłada budowę funkcjonalnej strony typu CMS, z podziałem na komponen
 
 ## Lista zmian
 
+**07.12.2020  -   Przedwstępna wersja projektu.**
+*   Pierwsza zadebiutowana wersja projektu.
+*   Do poprawy:
+    1.  Wygląd strny głównej. Nieprawidłowe dostosowanie szerokości. Zlokalizować i rozwiązać problem.
+        Edit. Problemem jest sekcja mapy.
+        Edit. Naprawiono.
+    2.  Panel admina. Błąd po stronie backendu. Zlokalizować i rozwiązać problem.

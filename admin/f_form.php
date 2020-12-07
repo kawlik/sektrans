@@ -1,10 +1,25 @@
 <?php
 
+/*
+    SEKCJA NIEDOSTĘPNA
 
-var_dump($_POST);
+    
+    Automatyczne przekierowanie na stronę główną,
+    do czasu właściwego zabezpieczenia.
+
+    Stan na 07.12.2020
+*/
 
 //  Importowanie pliku wspólnego
 require 'admin.php';
+header('Location: '.URL);
+exit();
+
+
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+
 
 //  Safe data read
 $name = e($_POST['form-name']);
