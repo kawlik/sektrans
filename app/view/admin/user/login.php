@@ -16,7 +16,7 @@
     <!--    password input  -->
     <div class="form-grup my-4">
     <label class="form-label" for="form-haslo">Hasło użytkownika</label>
-    <input class="form-control" id="form-haslo" name="form-haslo" type="text">
+    <input class="form-control" id="form-haslo" name="form-haslo" type="password">
     </div>
 
 

@@ -19,7 +19,7 @@ if(!isset($_SESSION['is_loged'])) {
         $user->execute(['login' => $login]);
         $user = $user->fetch(PDO::FETCH_ASSOC);
     
-        if($user && !password_verify($haslo, $user['haslo'])) {
+        if($user && password_verify($haslo, $user['haslo'])) {
     
             //  login i haslo poprawne
             $_SESSION['is_logged'] = true;
