@@ -9,7 +9,7 @@ if(!isset($_SESSION['bad_attempts'])) {
 
 if(!isset($_SESSION['is_loged'])) {
 
-    if(isset($_POST['form-login']) && $_SESSION['bad_attempts'] < 5) {
+    if(isset($_POST['form-login']) && $_SESSION['bad_attempts'] < 50) {
 
         //  podano login oraz nie przekroczono liczby 5 prób
         $login = filter_input(INPUT_POST, 'form-login');

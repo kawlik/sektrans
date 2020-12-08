@@ -53,6 +53,6 @@ if($_SESSION['is_logged'] && (int)$_COOKIE['login_timeout'] > time()) {
 }
 
 require TEMP.'/footer.php';
-
+ob_end_flush();
 
 ?>

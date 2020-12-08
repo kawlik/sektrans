@@ -25,3 +25,5 @@ Projekt zakłada budowę funkcjonalnej strony typu CMS, z podziałem na komponen
         Edit. Problemem jest sekcja mapy.
         Edit. Naprawiono.
     2.  Panel admina. Błąd po stronie backendu. Zlokalizować i rozwiązać problem.
+        Edit. Problem z buforem i wymianą treści pomiędzy nagłówkami.
+        Edit. Naprawiono.
